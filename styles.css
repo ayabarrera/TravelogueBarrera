@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0;*/
+}
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+}
+
+/* navigation bar */
+#navbar {
+    background-color: rgb(32, 24, 35);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 100px;
+}
+
+
+#navbar a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    flex: 1;
+    padding: 1rem;
+}
+
+#navbar a:hover {
+    color: rgb(192, 145, 201);
+}
+
+/* 3 photos */
+#headerimg {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#headerimg img {
+    width: 100%;
+    max-width: 33%;
+    height: auto;
+    padding: 12px;
+}
+
+/*container for each location*/
+.travelsection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 16px;
+    background-color: rgb(210, 209, 231);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/*h1 and paragraph portion*/
+.left-section {
+    flex: 1;
+    flex-direction: column;
+    max-width: 100ch;
+    padding: 24px;
+    display: flex;
+    align-items: left;
+    text-align: left;
+}
+
+.left-section h1 {
+    font-size: 36px;
+    font-family: "Pacifico", "Playwrite VN", "Playwrite IN", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(36, 24, 40);
+}
+
+.left-section p {
+    font-size: 14px;
+}
+
+/*img section for locations*/
+
+.right-section {
+    flex: 1;
+    width: 100%;
+    max-width: 50%;
+}
+
+.right-section img {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+
+section a {
+    background-color: rgb(32, 24, 35);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;
+}
+
+section a:hover {
+    background-color: rgb(128, 76, 138);
+}
+
+#usasection {
+    background-color: rgb(219, 191, 212);
+    border-radius: 20px;
+    flex-direction: row-reverse;
+
+}
+
+footer {
+    background-color: rgb(32, 24, 35);
+    color: whitesmoke;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 2300px) and (max-width: 3248px) {
+    #navbar a {
+        font-size: 32px;
+    }
+
+    .left-section h1 {
+        font-size: 100px;
+    }
+
+    .left-section p {
+        font-size: 20px;
+    }
+
+    section a {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        align-items: left;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+}
+
+@media all and (max-width: 1000px) {
+
+    .travelsection,
+    #usasection {
+        flex-direction: column;
+    }
+
+    .travelsection img {
+        max-width: 100%;
+    }
+
+    #navbar a {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    #navbar a {
+        display: block;
+        font-size: 12px;
+        padding: 8px 0;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid #fff;
+    }
+}
